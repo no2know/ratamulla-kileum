@@ -1,0 +1,69 @@
+{
+    "name": "TorToolkitX-Telegram",
+    "description": "Telegram leecher bot with python",
+    "logo": "https://raw.githubusercontent.com/yash-dk/TorToolkit-Telegram/master/toolkit.jpg",
+    "keywords": [
+      "telegram",
+      "bot",
+      "qBittorrent",
+      "python"
+    ],
+    "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "13"
+        }
+      }
+    ],
+    "repository": "https://github.com/no2know/ratamulla-kileum",
+    "website": "https://github.com/no2know/ratamulla-kileum",
+    "success_url": "https://github.com/no2know/ratamulla-kileum/blob/master/readme.md",
+    "stack": "container",
+    "env": {
+    "API_HASH": {
+      "description": "Get your api hash from http://my.telegram.org/",
+      "value": ""
+    },
+    "API_ID": {
+      "description": "Get your api id from http://my.telegram.org/",
+      "value": ""
+    },
+    "BOT_TOKEN": {
+      "description": "Get your bot token from @BotFather",
+      "value": ""
+    },
+    "BASE_URL_OF_BOT": {
+      "description": "Base URL :- https://yourappname.herokuapp.com",
+      "value": "" 
+    },
+    "ALD_USR": {
+      "description": "Variable seperate by spaces",
+      "value": "" 
+    },
+    "DATABASE_URL": {
+      "description": "Used to connect to DB (postgres-heroku)",
+      "required": false
+    }, 
+    "OWNER_ID": {
+      "description": "ID of owner",
+      "value": "" 
+    },
+    "MAX_YTPLAYLIST_SIZE": {
+      "description": "Max size of a playlist that is allowed (Number of videos)",
+      "value": "15" 
+    },
+    "MAX_TORRENT_SIZE": {
+      "description": "Max torrent size in GBs that is allowed",
+      "value": "20" 
+    },  
+    "FORCE_DOCUMENTS": {
+      "description": "True/False",
+      "value": "False" 
+    },
+    "LEECH_ENABLED": {
+      "description": "True/False",
+      "value": "True" 
+    }    
+  }
+}
